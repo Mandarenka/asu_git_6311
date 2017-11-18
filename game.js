@@ -451,6 +451,7 @@ Ship = function () {
   };
 
 };
+    
 Ship.prototype = new Sprite();
 
 BigAlien = function () {
@@ -940,7 +941,7 @@ Game = {
 
       Game.score = 0;
       Game.lives = 2;
-      Game.totalAsteroids = 2;
+      Game.totalAsteroids = 4;
       Game.spawnAsteroids();
 
       Game.nextBigAlienTime = Date.now() + 30000 + (30000 * Math.random());
