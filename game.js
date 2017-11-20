@@ -637,13 +637,13 @@ Asteroid = function () {
             [-10,   0,
               -5,   7,
               -3,   4,
-               1,  10,
+               1,  10/*,
                5,   4,
               10,   0,
                5,  -6,
                2, -10,
               -4, -10,
-              -4,  -5]);
+              -4,  -5 */);
 
   this.visible = true;
   this.scale = 6;
@@ -943,7 +943,7 @@ Game = {
     spawn_ship: function () {
       Game.ship.x = Game.canvasWidth / 2;
       Game.ship.y = Game.canvasHeight / 2;
-      if (Game.ship.isClear()) {
+      if (Game.ship.isClear()F) {
         Game.ship.rot = 0;
         Game.ship.vel.x = 0;
         Game.ship.vel.y = 0;
